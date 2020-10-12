@@ -33,7 +33,10 @@ const IndexPage = () => (
               <div className="px-2 py-1 bg-gray-200">Travel Agency</div>
             </div>
           </Link>
-          <div className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border cursor-pointer hover:shadow-lg border-gray">
+          <Link
+            to="/aircraft-equipment-lookup"
+            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border cursor-pointer hover:shadow-lg border-gray"
+          >
             <div className="text-2xl font-medium text-gray-700">
               Aircraft Equipment Lookup
             </div>
@@ -45,7 +48,7 @@ const IndexPage = () => (
               <div className="px-2 py-1 bg-gray-200">Utility</div>
               <div className="px-2 py-1 bg-gray-200">Travel Agency</div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const AdvancedCalendarSearch = () => {
+const AircraftEquipmentLookup = () => {
   useEffect(() => {
     var script = document.createElement("script")
     script.src = "/js/portal.v6-uber.js"
@@ -13,14 +13,14 @@ const AdvancedCalendarSearch = () => {
         container: "apimatic-widget",
         codegenApiRoutes: {
           docsgen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/docs-generations/generated-file?template={template}",
+            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/docs-generations/generated-file?template={template}",
           codegen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/code-generations/generated-file?template={template}",
+            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/code-generations/generated-file?template={template}",
           transform:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/transformations/generated-file?format={format}",
+            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/transformations/generated-file?format={format}",
         },
         apiKey:
-          "8bt0WJD4Z596xsB-lb8SOFnahlSnzFV9NLm6oFTqwirhkb5z9B-RHKHLqiCfG4hsIXYTqlEcTT-puuuJue0bhw**",
+          "8bt0WJD4Z596xsB-lb8SOCQJVMegFVgdX6EMmFNSGtKrVfk3bOiinresB3xPUcpKfKGJ1_SWT9n-K3gL6u_svA**",
         baseUrl: "https://www.apimatic.io",
         enableExport: false,
         renameHttpToRest: false,
@@ -78,4 +78,4 @@ const AdvancedCalendarSearch = () => {
     </Layout>
   )
 }
-export default AdvancedCalendarSearch
+export default AircraftEquipmentLookup

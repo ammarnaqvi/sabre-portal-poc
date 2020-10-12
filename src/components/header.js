@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Logo from "../images/logo.svg"
@@ -10,7 +11,9 @@ const Header = ({ siteTitle }) => (
       <div className="flex flex-wrap w-full h-full">
         <div className="w-full h-1 bg-red-dark"></div>
         <div className="px-8 py-2 text-2xl text-white">Dev Studio</div>
-        <div className="px-8 py-2 text-2xl text-white">Product Catalog</div>
+        <Link to="/" className="px-8 py-2 text-2xl text-white">
+          Product Catalog
+        </Link>
       </div>
     </nav>
   </header>
