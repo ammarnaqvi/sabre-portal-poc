@@ -12,16 +12,13 @@ const AircraftEquipmentLookup = () => {
       APIMaticDevPortal.show({
         container: "apimatic-widget",
         codegenApiRoutes: {
-          docsgen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/docs-generations/generated-file?template={template}",
-          codegen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/code-generations/generated-file?template={template}",
-          transform:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm512yBm-bTea2xsQkPlJQM3_8-n5pFrYKGnsJtoSXbY5X/published-artifacts/transformations/generated-file?format={format}",
+          docsgen: "/aircraft-equipment-lookup/docs/{template}.json",
+          codegen: "/aircraft-equipment-lookup/sdks/{template}.zip",
+          transform: "/aircraft-equipment-lookup/exports/{format}",
         },
         apiKey:
-          "8bt0WJD4Z596xsB-lb8SOCQJVMegFVgdX6EMmFNSGtKrVfk3bOiinresB3xPUcpKfKGJ1_SWT9n-K3gL6u_svA**",
-        baseUrl: "https://www.apimatic.io",
+          "3PqFsCpTE9bvv6-cZoCm5_rqlSMXCnHtDUwME4vE5aadeyuIOFEDWyOFsjY_6J-g",
+        baseUrl: "./../",
         enableExport: false,
         renameHttpToRest: false,
         enableConsoleCalls: true,

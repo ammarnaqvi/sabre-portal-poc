@@ -12,16 +12,13 @@ const AdvancedCalendarSearch = () => {
       APIMaticDevPortal.show({
         container: "apimatic-widget",
         codegenApiRoutes: {
-          docsgen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/docs-generations/generated-file?template={template}",
-          codegen:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/code-generations/generated-file?template={template}",
-          transform:
-            "/api/api-entities/3PqFsCpTE9bvv6-cZoCm59lZrY3YjIWgyPq4QZILx_s326-Gt6tJLDzZST4Ymr-I/published-artifacts/transformations/generated-file?format={format}",
+          docsgen: "/advanced-calendar-search/docs/{template}.json",
+          codegen: "/advanced-calendar-search/sdks/{template}.zip",
+          transform: "/advanced-calendar-search/exports/{format}",
         },
         apiKey:
           "8bt0WJD4Z596xsB-lb8SOFnahlSnzFV9NLm6oFTqwirhkb5z9B-RHKHLqiCfG4hsIXYTqlEcTT-puuuJue0bhw**",
-        baseUrl: "https://www.apimatic.io",
+        baseUrl: "./../",
         enableExport: false,
         renameHttpToRest: false,
         enableConsoleCalls: true,
