@@ -4,17 +4,11 @@ import React from "react"
 import Logo from "../images/logo.svg"
 const Header = ({ siteTitle }) => (
   <header>
-    <nav className="flex items-center w-full h-16 bg-black">
-      <div className="flex items-center h-full px-8 bg-red">
-        <img className="w-32" src={Logo} />
-      </div>
-      <div className="flex flex-wrap w-full h-full">
-        <div className="w-full h-1 bg-red-dark"></div>
-        <div className="px-8 py-2 text-2xl text-white">Dev Studio</div>
-        <Link to="/" className="px-8 py-2 text-2xl text-white">
-          Product Catalog
-        </Link>
-      </div>
+    <nav className="flex flex-wrap items-center w-full h-20 bg-white">
+      <img
+        className="w-32 mx-8"
+        src="https://apimaticio.blob.core.windows.net/images/hosteddocs/9d8d527b-5add-4f50-83fe-289fe4f41254"
+      />
     </nav>
   </header>
 )

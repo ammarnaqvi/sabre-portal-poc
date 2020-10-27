@@ -7,68 +7,69 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="w-full min-h-full bg-image">
+    <div className="w-full h-128 bg-pagar-green">
+      <div className="pt-24 text-5xl font-bold text-center text-white">
+        Bem-vindo à documentação Pagar.me
+      </div>
+      <div className="max-w-4xl mx-auto mt-8 text-4xl leading-none text-center text-white">
+        Aqui você vai encontrar guias e exemplos para te ajudar a integrar com a
+        melhor API de Pagamentos do Brasil!
+      </div>
+      <button className="block w-40 h-12 mx-auto mt-16 text-lg font-bold bg-white rounded text-pagar-green">
+        Começar
+      </button>
       <div className="flex flex-wrap w-full max-w-6xl mx-auto">
-        <div className="w-full mt-48 text-6xl text-center text-gray-700">
-          Product Catalog
-        </div>
         <div className="flex flex-wrap justify-between w-full">
           <Link
-            to="/advanced-calendar-search"
-            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border cursor-pointer hover:shadow-lg border-gray"
+            to="/transactions"
+            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border rounded-lg cursor-pointer hover:shadow-lg border-gray"
           >
             <div className="text-2xl font-medium text-gray-700">
-              Advanced Calendar Search
+              Transactions API
             </div>
             <p className="h-24 mt-4 text-base leading-tight text-gray-700">
-              The Advanced Calendar Search API returns the lowest published
-              fares and flight itineraries for a given city pair. The API uses
-              the Travel Insight engine to retrieve up to 192 days of shopped
-              fare data for a given city pair and length of stay available in
-              the Sabre® cache.
+              By integrating with the Pagar.me API, you can create transactions
+              from orders placed on your platform. It is possible to use the
+              credit card and boleto mechanisms to make payments. The following
+              items explain in more detail how to create a transaction of each
+              type:
             </p>
-            <div className="flex w-full mt-6 space-x-4">
-              <div className="px-2 py-1 bg-gray-200">Air</div>
-              <div className="px-2 py-1 bg-gray-200">Search</div>
-              <div className="px-2 py-1 bg-gray-200">Travel Agency</div>
-            </div>
           </Link>
           <Link
-            to="/aircraft-equipment-lookup"
-            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border cursor-pointer hover:shadow-lg border-gray"
+            to="/payments"
+            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border rounded-lg cursor-pointer hover:shadow-lg border-gray"
           >
             <div className="text-2xl font-medium text-gray-700">
-              Aircraft Equipment Lookup
+              Payments API
             </div>
             <p className="h-24 mt-4 text-base leading-tight text-gray-700">
-              The Aircraft Equipment Lookup API returns the aircraft name
-              associated with a specified IATA aircraft equipment code.
+              The Pagar.me payment link is a tool that makes it easier to
+              receive sales that are not completed on your website or app. With
+              it you create a checkout link, send it to the customer and he can
+              make the payment anywhere.
             </p>
-            <div className="flex w-full mt-6 space-x-4">
-              <div className="px-2 py-1 bg-gray-200">Utility</div>
-              <div className="px-2 py-1 bg-gray-200">Travel Agency</div>
-            </div>
           </Link>
           <Link
-            to="/digital-connect"
-            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border cursor-pointer hover:shadow-lg border-gray"
+            to="/balance-management"
+            className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-white border rounded-lg cursor-pointer hover:shadow-lg border-gray"
           >
             <div className="text-2xl font-medium text-gray-700">
-              Digital Connect
+              Balance Management API
             </div>
             <p className="h-24 mt-4 text-base leading-tight text-gray-700">
-              Sabre’s Digital Connect platform provides session management and
-              handles complex cross platform orchestration across Sabre’s
-              integrated Airline Retailing platform consisting of customer
-              acquisition; select shopping; customer experience; as well as
-              personalization, fulfillment and digital experience.
+              The balance of Pagar.me is compiled from all the amounts that
+              passed through your Pagar.me account, divided into 3 amounts:
+              "receivable", "available" and "transferred". The balance
+              receivable refers to the amounts that will be cleared in the
+              future, that is, transactions that have been approved but have not
+              yet been settled. The available balance will consist of all the
+              amounts that have already been settled and are available in the
+              Pagar.me account. Finally, the transferred balance will represent
+              the amount that has already been paid and transferred to a bank
+              account.
             </p>
-            <div className="flex w-full mt-6 space-x-4">
-              <div className="px-2 py-1 bg-gray-200">Utility</div>
-              <div className="px-2 py-1 bg-gray-200">Travel Agency</div>
-            </div>
           </Link>
-          <div className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-gray-100 border border-gray"></div>
+          <div className="w-1/2 h-64 max-w-lg px-5 py-4 mt-16 bg-gray-100 border rounded-lg border-gray"></div>
         </div>
       </div>
     </div>

@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: "#e50000",
-        "red-dark": "#ac0000",
-        black: "#222",
-        white: "#fff",
+        "pagar-green": "#65A300",
+      },
+      spacing: {
+        128: "32rem",
       },
     },
   },
